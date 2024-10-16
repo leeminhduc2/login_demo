@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" style="-fx-background-color: F5F7F8;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.login_demo.HelloController">
+    <children>
+        <Text fill="#535453" layoutX="129.0" layoutY="502.0" strokeType="OUTSIDE" strokeWidth="0.0" text="DONALD LIC" textAlignment="CENTER" wrappingWidth="329.13671875">
+            <font>
+                <Font size="57.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="240.0" fitWidth="240.0" layoutX="174.0" layoutY="131.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../../../../../../../../Downloads/0603a9fe0339f2df1a4febdbaec1a6c6.jpg" />
+            </image>
+        </ImageView>
+        <Line endX="-14.0" endY="442.0" layoutX="654.0" layoutY="198.0" startX="-14.0" startY="-118.0" stroke="#535453" />
+        <TextField fx:id="userName" layoutX="729.0" layoutY="196.0" prefHeight="76.0" prefWidth="450.0" promptText="username" style="-fx-background-color: F5F7F8; -fx-border-color: #535453; -fx-border-radius: 25;">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </TextField>
+        <PasswordField fx:id="password" layoutX="729.0" layoutY="295.0" prefHeight="76.0" prefWidth="450.0" promptText="password" style="-fx-background-color: F5F7F8; -fx-border-color: #535453; -fx-border-radius: 25;">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </PasswordField>
+        <Text fill="#535453" layoutX="729.0" layoutY="137.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sign in" textAlignment="CENTER" wrappingWidth="450.0">
+            <font>
+                <Font size="42.0" />
+            </font>
+        </Text>
+        <Button fx:id="loginButton" layoutX="729.0" layoutY="400.0" mnemonicParsing="false" onAction="#Login" onMouseClicked="#Login" prefHeight="76.0" prefWidth="450.0" style="-fx-border-radius: 25;" styleClass="button-custom" text="LOGIN" textFill="#535453">
+            <font>
+                <Font size="35.0" />
+            </font>
+        </Button>
+        <Hyperlink alignment="CENTER_RIGHT" contentDisplay="RIGHT" layoutX="999.0" layoutY="516.0" prefHeight="33.0" prefWidth="180.0" text="Sign up">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </Hyperlink>
+      <Text fx:id="status" layoutX="729.0" layoutY="511.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Memaybeo" wrappingWidth="269.13671875" />
+    </children>
+</AnchorPane>
