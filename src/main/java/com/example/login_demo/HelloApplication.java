@@ -13,7 +13,6 @@ public class HelloApplication extends Application {
         SQLController sqlController = new SQLController();
         sqlController.initialize();
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("hello-view.fxml"));
-        System.out.println("OK");
         Scene scene = new Scene(fxmlLoader.load(), 1280, 720);
         stage.setTitle("Hello!");
         stage.setScene(scene);
